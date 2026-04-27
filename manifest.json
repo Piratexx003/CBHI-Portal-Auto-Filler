@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CBHI Portal Auto-Filler",
+  "version": "2.0",
+  "description": "Smartly maps CBHI Monthly Report CSVs to the web portal.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

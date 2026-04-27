@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    h3 { margin-top: 0; color: #2c3e50; }
+    button { margin-top: 15px; width: 100%; padding: 10px; cursor: pointer; background-color: #0056b3; color: white; border: none; border-radius: 5px; font-weight: bold;}
+    button:hover { background-color: #004494; }
+    input[type="file"] { margin-top: 10px; width: 100%; }
+    #status { margin-top: 15px; font-size: 13px; color: #d35400; font-weight: bold; }
+  </style>
+  <script src="xlsx.full.min.js"></script>
+</head>
+<body>
+  <h3>CBHI Data Injector by Aniruddha Dey, DPA, Coochbehar</h3>
+  <label for="uploadExcel">Select Monthly Cumulative Excel File:</label>
+  <input type="file" id="uploadExcel" accept=".xlsx, .xls, .csv" />
+  
+  <button id="fillDataBtn">Inject Data to Portal</button>
+  <p id="status"></p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
